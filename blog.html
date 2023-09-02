@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Blog</title>
+          <style>
+               *{
+                    box-sizing: border-box;
+                    font-family: sans-serif;
+               }
+               body{
+                    padding: 1.2rem;
+               }
+               h1{
+                    text-align: center;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+               }
+               h3{
+                    font-size: 1.2rem;
+                    padding:10px 0px;
+               }
+               p{
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    
+               }
+               li{
+                    padding-top: 10px;
+                    font-weight: 200;
+               }
+               span{
+                    text-decoration: underline;
+                    ;
+               }
+          </style>
+
+
+</head>
+<body>
+     <main>
+          <section>
+               <h1>Blog Question and <br> Answers</h1>
+               <h3><span>Question no.1:</span> <br> Discuss the scope of var, let, and const.</h3>
+               <p>Var:</p>
+               <ul>
+                    <li>Var declaration are globally scoped or function scoped.</li>
+                    <li>var variables can be updated and re-declare within its scope</li>
+                    <li>Var can be declared without being initialized.</li>
+               </ul>
+               <p>Let:</p>
+               <ul>
+                    <li>Variables declared with 'let' are block-scoped</li>
+                    <li>Let variables can be updated but not declared.</li>
+                    <li>Let can be redeclare but cannot reinitialized</li>
+               </ul>
+               <p>Const:</p>
+               <ul>
+                    <li>Also const are block scoped</li>
+                    <li>Const is a block scope that can be accessible within block</li>
+                    <li>Const variables can neither but not re-declared and cannot be reinitialized.</li>
+               </ul>
+               <!-- q-2 -->
+               <h3><span>Question no.2:</span> <br> Tell us the use cases of null and undefined</h3>
+               <p>Null:</p>
+
+               <ul>
+                    <li>It means an empty value or a blank value and it is also a primitive type in javaScript.</li>
+                    <li>The variable which has been assigned as 'null' contains no value</li>
+                    <li>Null can be defined in object so that it can understand that the object should be clear and reset.</li>
+               </ul>
+               <p>Undefined:</p>
+               <ul>
+                    <li>Undefined means the variable has been declared but its value has not been assigned.</li>
+                    <li>When we do not pass an argument for a function parameter,the default is taken as 'Undefined'</li>
+                    <li>When a function does not return a value,it returns undefined'</li>
+                    <li>When trying to access an object property that does not exist,JavaScrips returns 'undefined'</li>
+               </ul>
+
+               <!-- q-3 -->
+               <h3><span>Question no.3:</span><br> What do you mean by REST API?</h3>
+               <p>REST API:</p>
+               <ul>
+
+                    <li>REST API stand for Representational State Transfer Application Programming Interface</li>
+                    <li>A REST API is an API that conforms to the design principles of the REST.</li>
+                    <li>REST is often implemented using HTTP as the communication protocol.</li>
+                    <li>It is popular and widely used approach for building web services that allow different software application to communicate and exchange data over the internet.</li>
+
+               </ul>
+          </section>
+     </main>
+</body>
+</html>
