@@ -12,7 +12,7 @@ const handleCategory = async () => {
      data.data.forEach((categoryId) => {
           const div = document.createElement("div");
           div.innerHTML = `
-          <a onclick="handleLoad('${categoryId.category_id}')" class="tab">${categoryId.category}</a>
+          <a class=" hover:bg-[#FF1F3D] bg-[#25252526] px-3 rounded-xl hover:text-white text-black py-3 text-sm md:text-base" onclick="handleLoad('${categoryId.category_id}')" class="tab">${categoryId.category}</a>
           `;
           tabContainer.appendChild(div);
      });
@@ -50,7 +50,7 @@ const handleLoad = async (id) => {
           const div = document.createElement("div");
           div.innerHTML = `
           
-          <div class="h-[300px] bg-base-100 shadow-xl mx-2">
+          <div class="h-[320px] bg-base-100 shadow-xl mx-2">
                <div class="flex justify-center">
                     <img class="w-[300px] h-52 p-2 rounded-xl " src="${
                          news.thumbnail
