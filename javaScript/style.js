@@ -19,6 +19,7 @@ const handleCategory = async () => {
 };
 
 const handleLoad = async (id) => {
+     
      const response = await fetch(
           `https://openapi.programming-hero.com/api/videos/category/${id}`
      );
@@ -39,6 +40,7 @@ const handleLoad = async (id) => {
      cardContainer.innerHTML = "";
 
      data.data.forEach((news) => {
+
           // Time calculation
           const value = news?.others?.posted_date;
           const hours = Math.floor(value / 3600);
